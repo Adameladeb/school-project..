@@ -1,0 +1,236 @@
+body, html {
+    height:100%;
+}
+
+#home-div {
+    background-color: #292e32;
+}
+
+.full-page {
+    height:100vh;
+}
+
+#home-bg-div {
+    position: relative;
+    background-image: url("../images/title-div-wallpaper.png");
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0.5vmin);
+    -webkit-filter: blur(0.5vmin);
+    
+}
+
+.w3-Dosis {
+    font-family: "Dosis", w3-sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#title-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    background-color:rgb(4, 136, 92);
+    border-radius: 1.5vmin;
+    color: white;
+}
+
+#title-scroll {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 5vmin;
+}
+
+#greeks-title {
+    color: #c3944c;
+    font-size: 5vmin;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#intro-div {
+    position:relative;
+    height: 40vh;
+}
+
+#intro-text {
+    position: absolute;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    font-size: 4.5vmin;
+    width:90%;
+}
+
+#ancient-greece-photo {
+    height: 30vh;
+    background-image: url("../images/ancient\ greece.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    margin:0;
+    padding: 0;
+}
+
+#models-photo {
+    height: 30vh;
+    background-image: url("../images/different-models.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    margin:0;
+    padding: 0;
+}
+
+
+.pager {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: right;
+}
+
+.paragraph-text {
+    text-align: justify;
+    font-size: 4.5vmin;
+    width:90vw;
+}
+
+#thomson-photo {
+    position: relative;
+    height:20vh;
+    background-image: url("../images/thomson.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rutherford-photo {
+    position: relative;
+    height:20vh;
+    background-image: url("../images/rutherford.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#niels-photo {
+    position: relative;
+    height:20vh;
+    background-image: url("../images/niels.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#schrodinger2-photo {
+    position: relative;
+    height:20vh;
+    background-image: url("../images/schrodinger2.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-text {
+    font-weight: bold; color:white;margin:0; width:100%;
+}
+
+
+.small-photo {    
+    max-width: 80vw;
+    margin:0 0 0 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+
+#last-div {
+    background-color: #292e32;
+    position: relative;
+}
+
+#end-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    border-radius: 1.5vmin;
+    color: white;
+}
+
+@media (min-width: 720px) {
+    :is(
+        #ancient-greece-photo ,
+        #thomson-photo, #rutherford-photo, #rutherford-photo, 
+        #niels-photo, #schrodinger2-photo) {
+            background-attachment: fixed;
+            height:30vh;
+        }
+    #home-bg-div {
+        background-attachment: fixed;
+    }
+    #title-div {
+        width:auto;
+    }
+
+    #intro-text {
+        width: 40%;
+        font-size: 3vmin;
+    }
+
+    .small-photo {
+        max-height: 60vh;
+        max-width: 50vw;
+    }
+
+    #ancient-greeks {
+        height:100vh;
+    }
+    .pager {
+        flex-direction: row;
+    }
+    .paragraph-text {
+        max-width: 40%;
+        font-size:3vmin;
+        margin-right:5vw;
+    }
+    #models-photo {
+        height: 110vh;
+        background-attachment: fixed;
+    }
+}   
